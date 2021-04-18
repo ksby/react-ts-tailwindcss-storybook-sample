@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import { FC } from 'react';
 
 export type ListItemProps = {
   image: string;
@@ -6,9 +6,9 @@ export type ListItemProps = {
   author: string;
 };
 
-const ListItem: FC<ListItemProps> = ({image, title, author}) => (
+const ListItem: FC<ListItemProps> = ({ image, title, author }) => (
   <article className="p-2 flex space-x-4">
-    <img className="flex-none w-16 h-16 rounded-lg" src={image} alt=""/>
+    <img className="flex-none w-16 h-16 rounded-lg" src={image} alt="" />
     <div>
       <dl>
         <div>

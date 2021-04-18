@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 
 import ListItem, { ListItemProps } from './ListItem';
 
@@ -9,7 +9,7 @@ export type ListProps = {
 const List: FC<ListProps> = ({ items }) => (
   <ul className="divide-y divide-gray-600">
     {items.map((item) => (
-      <ListItem {...item} />
+      <ListItem image={item.image} title={item.title} author={item.author} />
     ))}
   </ul>
 );

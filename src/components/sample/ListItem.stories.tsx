@@ -1,7 +1,7 @@
 import React from 'react';
-import {Story} from '@storybook/react';
+import { Story } from '@storybook/react';
 
-import ListItem, {ListItemProps} from './ListItem';
+import ListItem, { ListItemProps } from './ListItem';
 import dog from './dog.jpg';
 
 export default {
@@ -10,7 +10,7 @@ export default {
 };
 
 const Template: Story<ListItemProps> = (args: ListItemProps) => (
-  <ListItem image={args.image} title={args.title} author={args.author}/>
+  <ListItem image={args.image} title={args.title} author={args.author} />
 );
 
 export const Default = Template.bind({});
