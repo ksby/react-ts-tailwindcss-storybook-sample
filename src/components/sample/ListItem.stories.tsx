@@ -13,7 +13,7 @@ const Template: Story<ListItemProps> = (args: ListItemProps) => (
   <ListItem image={args.image} title={args.title} author={args.author} />
 );
 
-export const Default = Template.bind({});
+export const Default: Story<ListItemProps> = Template.bind({});
 Default.args = {
   image: dog,
   title: 'サンプルブック１',

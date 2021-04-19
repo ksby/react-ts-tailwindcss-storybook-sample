@@ -15,7 +15,7 @@ const Template: Story<ListProps> = (args: ListProps) => (
   <List items={args.items} />
 );
 
-export const Default = Template.bind({});
+export const Default: Story<ListProps> = Template.bind({});
 Default.args = {
   items: [
     {
