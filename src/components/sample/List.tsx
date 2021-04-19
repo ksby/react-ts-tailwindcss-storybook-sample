@@ -9,7 +9,12 @@ export type ListProps = {
 const List: FC<ListProps> = ({ items }) => (
   <ul className="divide-y divide-gray-600">
     {items.map((item) => (
-      <ListItem image={item.image} title={item.title} author={item.author} />
+      <ListItem
+        key={item.title}
+        image={item.image}
+        title={item.title}
+        author={item.author}
+      />
     ))}
   </ul>
 );
